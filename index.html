@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .one{
+            height: 40px;
+            width: 100%;
+            background-color: darkorange;
+            position: relative;
+        }
+        .one>ul{
+            position: absolute;
+            top: 10px;
+
+        }
+        .one>ul>li{
+            float: left;
+            margin-left: 30px;
+            list-style: none;
+        }
+        .two{
+            height: 100px;
+            width: 100%;
+            background-color: gray;
+            position: relative;
+    
+        }
+         .two>img{
+            left: 30px;
+            top: 25px;
+            position:absolute;
+        }
+        .two>ul{
+            font-size: 25px;
+            position: absolute;
+            color: white;
+            left: 700px;
+            list-style: none;
+        }
+        .two>ul>li{
+            float: left;
+            margin-left: 50px;
+            margin-top: 40px;
+        }
+        .two>ul>li:hover{
+        color: darkorange;
+        cursor: pointer;
+        }
+        .three{
+            height: 600px;
+            width: 100%;
+            background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./slider.jpg);
+            background-size: 100% 100%;
+            position: relative;
+        }
+        .three>h3{
+            color: aqua;
+            text-align: center;
+            position: relative ;
+            top: 90px;
+        }
+        .three>h1{
+            font-size: 70px;
+            color:mediumspringgreen;
+            position: relative;
+            top: 110px;
+            text-align: center;
+        }
+        .three>h2{
+            font-size: 80px;
+            color:darkorange;
+            position: relative;
+            top: 130px;
+            text-align: center;
+        }
+        .three>p{
+            font-size: 15px;
+            text-align: center;
+            position: relative;
+            color: aqua;
+            top: 150px;
+        }
+        .three>button{
+            height: 40px;
+            width: 150px;
+            border-radius: 30px;
+        background-color: yellow;
+            border: 1px solid white;
+            color: white;
+            position: relative;
+            top: 180px;
+            left: 520px;
+            /* border: none; */
+        }
+        .three>button:hover{
+            cursor: pointer;
+            background-color: transparent;    
+        }
+        .a{
+            margin-left: 20px;
+        }
+        .four{
+            height: 550px;
+            width: 100%;
+            /* border: 1px solid #000; */
+            position: relative;
+        }
+        .b{
+            height: 100%;
+            width: 49.5%;
+            /* border: 1px solid #000; */
+            float: left;
+        }
+        .b>h1{
+            text-align: center;
+            font-size: 35px;
+            color: yellow;
+            position: relative;
+            top: 80px;
+
+        }
+        .b>h2{
+            text-align: center;
+            color: blue;
+            position: relative;
+            top: 90px;
+            font-size: 25px;
+        }
+        .p4{ 
+            /* text-align: center; */
+            color: black;
+            position: relative;
+            top: 130px;
+            left: 70px;
+
+        }
+        .p5{
+            /* text-align: center; */
+            color: black;
+            position: relative;
+            top: 150px;
+            left: 70px;
+
+        }
+        
+        .b>button{
+            height: 30px;
+            width: 100px;
+            border-radius: 30px;
+            border: none;
+            position: relative;
+            top: 200px;
+            left: 60px;
+            background-color: yellow;
+            color: black ;
+        }
+
+        
+        .c{
+            height: 40vh;
+            width: 50%;
+            /* background-color: white; */
+            float: left;
+            background-image: url(./about.png);
+            background-size: 100% 100%;
+            position: absolute;
+            left: 650px;
+            top: 25%;
+            
+
+        }
+        .c>img{
+            position: absolute;
+            /* background-size: 100% 100%; */
+            left: 250px;
+            height: 70vh;
+            top: -50%;
+        
+        }
+        .five{
+            height: 500px;
+            width: 100%;
+            background-color:rgb(144, 197, 230);
+            position: relative;
+        }
+        .five>h1{
+            text-align: center;
+            color: black;
+            position: relative;
+            top: 20px;
+        }
+        .five>p{
+            text-align: center;
+            font-size: 15px;
+            position: relative;
+            top: 40px;
+        }
+        .d{
+            height: 300px;
+            width: 300px;
+            /* border: 1px solid #000; */
+            float: left;
+            margin-top: 60px;
+            margin-left: 30px ;
+
+        }
+        .d>img{
+            height: 150px;
+            width: 150px;
+            margin-left: 75px;
+            margin-top: 20px;
+        }
+        .d>h1{
+            font-size: 15px;
+            text-align: center;
+            margin-top: 25px;
+        }
+        .d>p{
+            text-align: center; 
+            position: relative;
+            top: 10px;
+        }
+        .six{
+            height: 600px;
+            width: 100%;
+            /* border: 1px solid #000; */
+            position: relative;
+        }
+        .six>h1{
+            text-align: center;
+            position: relative;
+            top: 30px;
+        }
+        .e{
+            height: 475px;
+            width: 430px;
+            background-image: url(./service.jpg);
+            background-size: 100% 100%;
+            position: relative;
+            top: 90px;
+            /* border: 1px solid #000; */
+            float: left;
+        }
+        .f{
+            height: 450px;
+            width: 430px; 
+            /* border: 1px solid #000; */
+            float: left;
+            margin-left: 15px;
+            margin-top: 90px;
+
+        }
+        .f>img{
+            height: 50%;
+            width: 100%;
+
+
+        }
+        .f>h3{
+            color: blue;
+            margin-top: 20px;
+        }
+        .f>p{
+            font-size: 15px;
+            margin-top: 20px;
+        }
+        .f>button{
+            height: 40px;
+            width: 120px;
+            background-color: yellow;
+            color: white;
+            border-radius: 30px;
+            margin-top: 20px;
+            border: none;
+        }
+        .seven{
+            height: 780px;
+            width: 100%;
+            background-image:linear-gradient(rgba(128, 128, 0, 0.705),rgba(128, 128, 0, 0.705)),url(./portf.jpg);
+            position: relative;
+        }
+        .seven>h4{
+            text-align: center;
+            color: white;
+            position: relative;
+            top: 70px;
+
+        }
+        .seven>p{
+            text-align: center;
+            color: white;
+            position: relative;
+            top: 100px;
+        }
+        .seven>ul{
+            position: absolute;
+            top: 200px;
+            list-style: none;
+            left: 450px;
+        }
+        .seven>ul>li{
+            float: left;
+            margin-left: 50px;
+            color: white;
+        }
+        .seven>button{
+            height: 40px;
+            width: 110px;
+            border-radius: 10px;
+            background-color: darkblue;
+            color: white;
+            position: absolute;
+            border:none;
+            top: 190px;
+            left: 320px;
+        }
+        .g{
+            height: 410px;
+            width: 500px;
+            background-image: url(./highlit.jpg);
+            position: relative;
+            top: 290px;
+            left: 30px;
+        
+        }
+        .img2{
+            height: 200px;
+            width: 370px;
+            position: relative;
+            left: 560px;
+            top: -120px;
+        }
+        .img3{ 
+            height: 200px;
+            width: 370px;
+            position: relative;
+            left: 570px;
+            top: -120px;
+
+         } 
+        .img4{ 
+            height: 200px;
+            width: 370px;
+            position: relative;
+            left: -190px; 
+            top: 90px;
+
+        } 
+        .img5{
+            height: 200px;
+            width: 370px;
+            position: relative;
+            left: 945px; 
+            top: -115px;
+        } 
+        .eight{
+            height: 520px;
+            width: 100%;
+            /* border: 1px solid #000; */
+        }
+        .eight>h3{
+            text-align: center ;
+            margin-top: 30px;
+        }
+        .eight>p{
+            text-align: center;
+            margin-top: 30px;
+
+        }
+        .i{
+            height: 350px;
+            width: 400px;
+            /* border: 1px solid #000; */
+            float: left;
+            position: relative;
+            top: 40px;
+        }
+        .i{
+            margin-left: 20px;
+        }
+        .j{
+            height: 220px;
+            width: 250px;
+            background-color: silver ;
+            border-radius: 30px;
+            position: relative;
+            left: 150px;
+        }
+        .j>h1{
+            font-size: 100px;
+            position: absolute;
+            left: 10px;
+        }
+        .j>p{
+            text-align: center;
+            font-size: 12px;
+            position: relative;
+            top: 80px;
+        }
+        .j>img{
+            margin-top: 150px;
+            margin-left: 80px;
+        }
+        .j>h4{
+            margin-left: 70px;
+            margin-top: 10px;
+        }
+        .nine{
+            height: 200px;
+            width: 100;
+            background-color: yellow;
+            position: relative;
+        }
+        .nine>h2{
+            color: black;
+            font-size: 25px;
+            position: absolute;
+            top: 70px;
+            left: 50px;
+        }
+        .nine>h3{
+            color: black;
+            font-size: 20px;
+            position: absolute;
+            top: 100px;
+            left: 70px;
+        }
+        .inp1{
+            height: 30px;
+            width: 230px;
+            border-radius: 10px;
+            font-size: 20px;
+
+            border: none;
+            outline: none;
+            position: absolute;
+           top:40px;
+            left: 800px;
+
+        }
+        .inp2{
+            height: 30px;
+            width: 230px;
+            border-radius: 10px;
+            border: none;
+            font-size: 20px;
+            outline: none;
+            position: absolute;
+            top: 40px;
+            left: 1080px;
+
+        }
+        .inp3{
+            height: 30px;
+            width: 330px;
+            border-radius: 10px;
+            font-size: 20px;
+            border: none;
+            outline: none;
+            position: absolute;
+            top: 100px;
+           left: 800px ;
+        }
+        .nine>button{
+            height: 30px;
+            width: 70px;
+            background-color: blue;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            position: absolute;
+            top: 100px;
+            left: 1200px;
+
+        }
+        .placeholder{
+            margin-left: 20px;
+        }
+        .ten{
+            height: 500px;
+            width: 100%;
+            background-image: url(./adad.png);
+            background-size: 100% 100%;
+
+        }
+        .develope{
+            height: 100px;
+            width: 100%;
+            background-color: blue;
+        }
+        .develope>h1{
+            text-align: center;
+            position:relative;
+            color: white;
+            top: 30px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="one">
+        <ul>
+            <li>1234-5678-9101</li>
+            <li>support@construction.com</li>
+            <li>Mon-Sat9.00am to 6.00pm</li>
+        </ul>
+    </div>
+    <div class="two">
+        <img src="logo.png">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Portifolio</li>
+            <li>servies</li>
+        </ul>
+    </div>
+    <div class="three">
+        <h3>We are Certified Engineer</h3>
+        <h1>Construction Services</h1>
+        <h2>Creative & Porfessionls</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat soluta eius dolor deleniti<br> voluptate repellat. Mollitia incidunt repudiandae nam nesciunt officiis, nulla velit cumque optio,<br> labore facere eum itaque ipsam.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat<br> soluta eius dolor deleniti voluptate repellat. Mollitia incidunt repudiandae nam nesciunt officiis,<br> nulla velit cumque optio, labore facere eum itaque ipsam.</p>
+        <button>know more</button>
+        <button class="a">view project</button>
+        </div>
+
+        <div class="four">
+            <div class="b">
+                <h1>WELLCOME TO OUR COMPANY</h1>
+                <h2>Lorem ipsum dolor sit amet. Lorem, ipsum dolor</h2>
+                <p class="p4">Lorem ipsum dolor sit amet. Lorem, ipsum dolor lorem sequi neque beatae. Tempore <br>pariatur reiciendis optio nemo aperiam doloribus exercitatione opti0 to aperiam optio<br> nemo aperiam doloribus exercitatione 
+                </p>
+                <p class="p5">Lorem ipsum dolor sit amet consectetur adipisicing Laboriosam impedit iusto quod<br> nihi ut voluptatum! Ex sequi ratione debitis cupiditate quia ipsum delectus ipsa optio<br> nemo aperiam optio nemo aperiam doloribus exercitatione</p>
+                <button>know more</button>
+            </div>
+            <div class="c">
+                <img  src="man.png">
+            </div>
+        </div>
+        <div class="five">.
+            <h1>WHY CHOOSE US</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi qui nam<br> magni fugiat facere excepturi. Deleniti saepe at in, quis praesentium<br> eveniet repellendus vel necessitatibus omnis, soluta quisquam!</p>
+            <div class="d">
+                <img src="aaa.png">
+                <h1>WE DELIVER QUALITY</h1>
+                <p>Lorem ipsum dolor consectetur.<br>
+                    Lorem, ipsum. hiff</p>
+            </div>
+            <div class="d">
+                <img src="aaa.png">
+                <h1>WE DELIVER QUALITY</h1>
+                <p>Lorem ipsum dolor consectetur.<br>
+                    Lorem, ipsum. hiff</p>
+
+
+            </div>
+            <div class="d">
+                <img src="aaa.png">
+                <h1>WE DELIVER QUALITY</h1>
+                <p>Lorem ipsum dolor consectetur.<br>
+                    Lorem, ipsum. hiff</p>
+
+
+            </div>
+            <div class="d">
+                <img src="aaa.png">
+                <h1>WE DELIVER QUALITY</h1>
+                <p>Lorem ipsum dolor consectetur.<br>
+                    Lorem, ipsum. hiff</p>
+
+
+            </div>
+        </div>
+        <div class="six">
+            <h1>RECENT POSTS</h1>
+            <div class="e"></div>
+            <div class="f">
+                <img src="service2.jpg">
+                <h3>2 best sites to build your own websites</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Voluptatum eum eveniet, facilis temporibus veritatis<br> possimuLorem, ipsum dolor sit amet consectetur adipisicing<br> elit. Voluptatum eum eveniet, facilis temporibus veritatis<br> possimuss</p>
+                <button>Learn More</button>
+            </div>
+            <div class="f">
+                <img src="service3.jpg">
+                <h3>2 best sites to build your own websites</h3     >
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Voluptatum eum eveniet, facilis temporibus veritatis<br> possimuLorem, ipsum dolor sit amet consectetur adipisicing<br> elit. Voluptatum eum eveniet, facilis temporibus veritatis <br>possimuss</p>
+               <button>Lear More</button>
+
+            </div>
+
+        </div>
+        <div class="seven">
+            <h4>MADE WITH LOVE</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit animi vero distinctio provident! Quam eveniet quod<br> sint officiis accusamus ea Lorem, ipsum dolor</p>
+            <ul>
+                <li>building</li>
+                <li>INTEROR DISIGNE</li>
+                <li>ISOLATION</li>
+                <li>PIUMPING</li>
+            </ul>
+            <button>SHOW ALL</button> 
+            <div class="g">
+            </div>
+            <div class="h">
+                <img src="im2.jpg" class="img2">
+                <img src="im3.jpg"class="img3">
+                <img src="im4.jpg" class="img4">
+                <img src="im5.jpg" class="img5">
+                
+            </div>   
+        </div>
+        <div class="eight">
+            <h3>CUSTOMER REVIEWS</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga necessitatibus eligendi, maxime<br> impedit aliquam quo dolore ipsum incidunt exercitationem rem
+            </p>
+            <div class="i">
+                <div class="j">
+                    <h1>"</h1>
+                    <p>"Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.Digni <br>ssimos ut doloremque hic quas <br> quasi consectetur maxime distinctio<br> rerum officiis quo repellt ab neque!<br> Ullam reprehenderit consequatur<br> sunt? Optio dolores aliquid"</p>
+                    <img src="c1.png" >
+                    <h4>JHON SMITH</h4>
+                </div>
+                </div>
+                
+                <div class="i">
+                    <div class="j">
+                        <h1>"</h1>
+                        <p>"Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. Digni<br> ssimos ut doloremque hic quas<br> quasi consectetur maxime distinctio<br> rerum officiis quo repellt ab neque!<br> Ullam reprehenderit consequatur<br> sunt? Optio dolores aliquid"</p>
+                       <img src="c2.png"> 
+                    <h4>JHON SMITH</h4>
+
+                    </div>             
+                     </div>
+            <div class="i">
+                <div class="j">
+                    <h1>"</h1>
+                    <p>"Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit. Digni <br>ssimos ut doloremque hic quas<br> quasi consectetur maxime distinctio<br> rerum officiis quo repellt ab neque!<br> Ullam reprehenderit consequatur <br>sunt? Optio dolores aliquid"</p>
+                 <img src="c1.png">
+                 <h4>JHON SMITH</h4>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="nine">
+            <h2>DO YOU HAVE ANY QUESTION?</h2>
+            <h3>FEEL FREE TO CONTACT US!</h3>
+            <input class="inp1" placeholder="Name" type="text">
+            <input class="inp2" placeholder="Email" type="text">
+            <input class="inp3" placeholder="Massage" type="text">
+            <button>Submit</button>
+        </div>
+        <div class="ten"></div>
+        <div class="develope">
+            <h1>All Right Reserve Develope by Muhammad Bilal Yousaf</h1>
+            </div>
+</body>
+</html>
